@@ -1,0 +1,99 @@
+.infos {
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media (min-width: 740px) and (max-width: 1024px){
+        padding-top: 140px;
+    }
+
+    &--secao1 {
+        background-image: linear-gradient(black, rgb(13, 13, 123),);
+    }
+
+    &--secao2 {
+        background-image: linear-gradient(rgb(13, 13, 123), black);
+    }
+
+    &--secao3 {
+        background-image: linear-gradient(black, rgb(13, 13, 123),);
+    }
+
+    &--imagem-esquerda {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        display: flex;
+        max-width: 80%;
+        gap: 40px;
+        margin: 0 auto;
+
+        @media (max-width: 640px){
+            display: block;
+            max-width: 90%;;
+            text-align: center;
+        }
+
+        @media (min-width: 740px) and (max-width: 1024px){
+            display: block;
+            max-width: 90%;
+            gap: 0;
+        }
+
+    }
+
+    &__imagem {
+        max-width: 380px;
+
+        @media (max-width: 640px){
+            max-width: 90%;
+            padding-top: 24px;
+        }
+
+        @media (min-width: 740px) and (max-width: 1024px){
+            max-width: 80%;
+            padding-top: 24px;
+        }
+    }
+
+    &__adicionais {
+        color: #fff;
+
+        &__titulo {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 16px;
+
+            @media (max-width: 640px){
+                padding-top: 50px;
+                padding-bottom: 24px;
+                font-size: 24px;
+            }
+
+            @media (min-width: 740px) and (max-width: 1024px){
+                padding-top: 30px;
+                font-size: 40px;
+                max-width: 90%;
+            }
+        }
+
+        &__descricao {
+            margin-top: 24px;
+            font-size: 16px;
+            line-height: 22px;
+
+            @media (max-width: 640px){
+                text-align: justify;
+            }
+
+            @media (min-width: 740px) and (max-width: 1024px){
+                font-size: 20px;
+                max-width: 80%;
+                line-height: 32px;
+            }
+        }
+    }
+}
